@@ -1,0 +1,79 @@
+.mb-3 {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.btn-search {
+  position: absolute;
+  margin: 10px auto;
+  max-width: 600px;
+}
+.btn-location {
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 380px;
+  background-color: blue;
+  color: #fff;
+  border-color: blue;
+}
+.btn-Location :hover {
+  background-color: rgb(3, 3, 68);
+}
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  padding-right: 30px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+}
+h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.fa-sun {
+  color: orange;
+  font-size: 80px;
+}
+.sun {
+  text-align: center;
+}
+.fa-wind {
+  color: blue;
+  font-size: 80px;
+}
+.wind {
+  font-size: 20px;
+}
+.fa-thermometer-full {
+  color: orangered;
+  font-size: 80px;
+}
+
+.temp {
+  font-size: 20px;
+}
+.fa-umbrella {
+  color: green;
+  font-size: 80px;
+}
+.rain {
+  font-size: 20px;
+}
+
+.sunny {
+  font-size: 30px;
+}
+.fa-cloud-sun {
+  font-size: 30px;
+  color: blue;
+}

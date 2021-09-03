@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e3ae0933e0.js"
+      crossorigin="anonymous"
+    ></script>
+     
+  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <form id=search-form>
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Enter your city"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+
+            <button type="submit" class="btn btn-success btn-search">
+              Search
+              
+            </button>
+            <button id= currentLocation type="submit" class= "btn-location" >
+              Current Location
+            </button>
+          </div>
+        </form>
+        <h1>London</h1>
+        <p class="sun">
+          <i class="fas fa-sun"></i>
+        </p>
+        <br />
+        <h3>Saturday 8am</h3>
+        <br />
+        <div class="row">
+          <div class="col-5 wind">
+            <i class="fas fa-wind"></i>
+            <br />
+            2 mph
+          </div>
+          <div class="col-5 temp">
+            <i class="fas fa-thermometer-full"></i>
+
+            <br />
+            <span id="currentTemperature">23</span><a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+          </div>
+          <div class="col-2 rain">
+            <i class="fas fa-umbrella"></i>
+            <br />
+            Likelihood: 0%
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <p class="upcoming">Next 5 days</p>
+        <div class="row">
+          <div class="col">
+            Sunday
+            <br />
+
+            <i class="fas fa-sun sunny"></i>
+            <br />
+            24°C
+          </div>
+          <div class="col">
+            Monday
+            <br />
+
+            <i class="fas fa-sun sunny"></i>
+            <br />
+            25°C
+          </div>
+          <div class="col">
+            Tuesday
+            <br />
+
+            <i class="fas fa-sun sunny"></i>
+            <br />
+            24°C
+          </div>
+          <div class="col">
+            Wednesday
+            <br />
+            <i class="fas fa-cloud-sun"></i>
+            <br />
+            23°C
+          </div>
+          <div class="col">
+            Thursday
+            <br />
+            <i class="fas fa-cloud-sun"></i>
+            <br />
+            22°C
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
